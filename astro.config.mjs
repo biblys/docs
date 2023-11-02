@@ -47,6 +47,7 @@ export default defineConfig({
 								{ label: 'Ajouter un livre au stock', link: '/administrer/stock/ajouter-un-livre-au-stock' },
 								{ label: 'Fiche exemplaire', link: '/administrer/stock/fiche-exemplaire' },
 								{ label: 'Réassocier un exemplaire', link: '/administrer/stock/reassocier-un-exemplaire-a-un-autre-article' },
+								{ label: 'Créer des promotions ponctuelles', link: '/administrer/stock/creer-des-promotions-ponctuelles' },
 							]
 						}
 					],
