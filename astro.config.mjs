@@ -46,6 +46,7 @@ export default defineConfig({
 							items: [
 								{ label: 'Ajouter un livre au stock', link: '/administrer/stock/ajouter-un-livre-au-stock' },
 								{ label: 'Fiche exemplaire', link: '/administrer/stock/fiche-exemplaire' },
+								{ label: 'Réassocier un exemplaire', link: '/administrer/stock/reassocier-un-exemplaire-a-un-autre-article' },
 							]
 						}
 					],
