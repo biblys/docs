@@ -22,11 +22,9 @@ l'exemplaire est marqué comme vendu et donc retiré du stock. Lorsqu'un article
 n'est plus vendable, et vous devrez ajouter de nouveaux exemplaires pour qu'il soit à nouveau vendable.
 
 Vous pouvez maintenant [ajouter votre premier exemplaire au stock](/administrer/stock/ajouter-un-livre-au-stock).
-
 Vous pouvez trouver dans la documentation 
 [la liste des champs de la fiche exemplaire](/administrer/stock/fiche-exemplaire/) pour vous aider.
-
-Si la différence entre article et exemplaire vous semble peu clair, vous pouvez lire 
+Si la différence entre article et exemplaire vous semble peu claire, vous pouvez lire 
 [Articles et exemplaires](/administrer/catalogue/articles-et-exemplaires).
 
 Si vous ne souhaitez pas gérer finement le stock de votre site, vous pouvez le 
