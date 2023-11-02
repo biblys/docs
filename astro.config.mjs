@@ -6,10 +6,11 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Documentation Biblys',
-			defaultLocale: 'fr',
+			defaultLocale: 'root',
 			locales: {
-				fr: {
+				root: {
 					label: 'Français',
+					lang: 'fr',
 				},
 			},
 			social: {
