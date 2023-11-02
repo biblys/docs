@@ -18,7 +18,7 @@ Pour qu'un article soit vendable, il doit avoir au moins un exemplaire en stock.
 l'exemplaire est marqué comme vendu et donc retiré du stock. Lorsqu'un article n'a plus aucun exemplaire en stock, il
 n'est plus vendable, et vous devrez ajouter de nouveaux exemplaires pour qu'il soit à nouveau vendable.
 
-Vous pouvez maintenant [ajouter votre premier exemplaire au stock](/administrer/catalogue/ajouter-un-livre-au-stock).
+Vous pouvez maintenant [ajouter votre premier exemplaire au stock](/administrer/stock/ajouter-un-livre-au-stock).
 
 Vous pouvez trouver dans la documentation [la liste des champs de la fiche exemplaire](http://www.biblys.fr/pages/doc_stock) pour vous aider.
 
