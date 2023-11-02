@@ -26,6 +26,7 @@ export default defineConfig({
 							label: 'Bibliographie',
 							items: [
 								{ label: 'Articles et exemplaires', link: '/administrer/bibliographie/articles-et-exemplaires' },
+								{ label: 'Fiche article', link: '/administrer/bibliographie/fiche-article' },
 							]
 						}
 					],
