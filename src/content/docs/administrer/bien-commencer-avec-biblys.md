@@ -3,7 +3,12 @@ title: Bien commencer avec Biblys
 description: Tout ce qu'il vous faut pour bien commencer avec Biblys
 ---
 
-Votre site Biblys est installé et vous avez accès à l’administration (en cliquant sur le logo Biblys en haut à gauche). Par où commencer ?
+Votre site Biblys est installé et vous avez accès à l’administration (en cliquant sur le logo Biblys en haut à gauche). 
+Par où commencer ?
+
+:::tip[Vous n'avez pas encore de site Biblys ?]
+Consultez d'abord la page [Installer Biblys](/installer/installer-biblys).
+:::
 
 ## Créer un premier article
 
@@ -25,7 +30,7 @@ Si la différence entre article et exemplaire vous semble peu clair, vous pouvez
 [Articles et exemplaires](/administrer/catalogue/articles-et-exemplaires).
 
 Si vous ne souhaitez pas gérer finement le stock de votre site, vous pouvez le 
-[configurer en mode stock virtuel](configurer/stock-virtuel/). Tous les articles seront alors
+[configurer en mode stock virtuel](/configurer/stock-virtuel/). Tous les articles seront alors
 considérés comme vendables dès lors qu'il font parti du catalogue.
 
 ## Créer un habillage graphique
