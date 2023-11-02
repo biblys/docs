@@ -21,6 +21,12 @@ export default defineConfig({
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Bien commencer avec Biblys', link: '/administrer/bien-commencer-avec-biblys/' },
+						{
+							label: 'Bibliographie',
+							items: [
+								{ label: 'Articles et exemplaires', link: '/administrer/bibliographie/articles-et-exemplaires' },
+							]
+						}
 					],
 				},
 			],
