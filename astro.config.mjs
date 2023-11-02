@@ -23,16 +23,16 @@ export default defineConfig({
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Bien commencer avec Biblys', link: '/administrer/bien-commencer-avec-biblys/' },
 						{
-							label: 'Bibliographie',
+							label: 'Catalogue',
 							items: [
-								{ label: 'Articles et exemplaires', link: '/administrer/bibliographie/articles-et-exemplaires' },
-								{ label: 'Fiche article', link: '/administrer/bibliographie/fiche-article' },
-								{ label: 'Fiche exemplaire', link: '/administrer/bibliographie/fiche-exemplaire' },
-								{ label: 'Ajouter un livre au stock', link: '/administrer/bibliographie/ajouter-un-livre-au-stock' },
-								{ label: 'Grille de prix', link: '/administrer/bibliographie/grille-de-prix' },
-								{ label: 'Fichiers téléchargeables', link: '/administrer/bibliographie/fichiers-telechargeables' },
-								{ label: 'Créer un article de type lot', link: '/administrer/bibliographie/creer-un-article-de-type-lot' },
-								{ label: 'Supprimer un article', link: '/administrer/bibliographie/supprimer-un-article' },
+								{ label: 'Articles et exemplaires', link: '/administrer/catalogue/articles-et-exemplaires' },
+								{ label: 'Fiche article', link: '/administrer/catalogue/fiche-article' },
+								{ label: 'Fiche exemplaire', link: '/administrer/catalogue/fiche-exemplaire' },
+								{ label: 'Ajouter un livre au stock', link: '/administrer/catalogue/ajouter-un-livre-au-stock' },
+								{ label: 'Grille de prix', link: '/administrer/catalogue/grille-de-prix' },
+								{ label: 'Fichiers téléchargeables', link: '/administrer/catalogue/fichiers-telechargeables' },
+								{ label: 'Créer un article de type lot', link: '/administrer/catalogue/creer-un-article-de-type-lot' },
+								{ label: 'Supprimer un article', link: '/administrer/catalogue/supprimer-un-article' },
 							]
 						}
 					],
