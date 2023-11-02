@@ -32,6 +32,7 @@ export default defineConfig({
 								{ label: 'Grille de prix', link: '/administrer/bibliographie/grille-de-prix' },
 								{ label: 'Fichiers téléchargeables', link: '/administrer/bibliographie/fichiers-telechargeables' },
 								{ label: 'Créer un article de type lot', link: '/administrer/bibliographie/creer-un-article-de-type-lot' },
+								{ label: 'Supprimer un article', link: '/administrer/bibliographie/supprimer-un-article' },
 							]
 						}
 					],
