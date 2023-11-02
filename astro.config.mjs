@@ -28,6 +28,7 @@ export default defineConfig({
 								{ label: 'Articles et exemplaires', link: '/administrer/bibliographie/articles-et-exemplaires' },
 								{ label: 'Fiche article', link: '/administrer/bibliographie/fiche-article' },
 								{ label: 'Fiche exemplaire', link: '/administrer/bibliographie/fiche-exemplaire' },
+								{ label: 'Ajouter un livre au stock', link: '/administrer/bibliographie/ajouter-un-livre-au-stock' },
 							]
 						}
 					],
