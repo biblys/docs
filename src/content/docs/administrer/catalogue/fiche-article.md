@@ -70,7 +70,7 @@ On peut entrer autant de contributeurs de chaque type que nécessaire, mais il f
 
 Si l'intervenant n'existe pas encore en base, on peut le créer en choisissant la dernière ligne dans la liste de proposition : **\-> Créer**. Dans la boîte de dialogue qui s'ouvre, entrer son NOM (tout en majuscule) et son Prénom. Le nouveau contributeur apparaîtra ensuite dans la liste des propositions et pourra être ajouté à la fiche article.
 
-[Tutoriel : Ajouter un contributeur à une fiche article](http://www.biblys.fr/biblys/media/pdf/tutoriel_ajouter_un_contributeur.pdf)
+[Tutoriel : Ajouter un contributeur à une fiche article](https://www.biblys.fr/biblys/media/pdf/tutoriel_ajouter_un_contributeur.pdf)
 
 ### Identifiants et liens
 
