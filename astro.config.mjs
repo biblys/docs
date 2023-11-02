@@ -3,6 +3,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://docs.biblys.fr',
 	integrations: [
 		starlight({
 			title: 'Documentation Biblys',
