@@ -1,5 +1,5 @@
 ---
-title: "Bien commencer avec Biblys"
+title: Bien commencer avec Biblys
 description: Tout ce qu'il vous faut pour bien commencer avec Biblys
 ---
 
@@ -25,14 +25,14 @@ Si la différence entre article et exemplaire vous semble peu clair, vous pouvez
 [Articles et exemplaires](/administrer/catalogue/articles-et-exemplaires).
 
 Si vous ne souhaitez pas gérer finement le stock de votre site, vous pouvez le 
-[configurer en mode stock virtuel](https://www.biblys.fr/pages/doc_mode-gestion-stock). Tous les articles seront alors
-considérés comme vendable dès lors qu'il font parti du catalogue.
+[configurer en mode stock virtuel](configurer/stock-virtuel/). Tous les articles seront alors
+considérés comme vendables dès lors qu'il font parti du catalogue.
 
 ## Créer un habillage graphique
 
 Une fois que votre catalogue commence à se remplir, vous pouvez commencer à personnaliser Biblys en créant un habillage graphique à l’aide de **l’éditeur de thème** disponible dans l’administration. 
 
-Pour vous aider, vous pouvez consulter [le wiki de l’éditeur de thème](https://github.com/biblys/wiki/wiki). 
+Pour vous aider, vous pouvez consulter [le wiki de l’éditeur de thème](https://github.com/biblys/wiki/wiki).
 
 ## Avant d’ouvrir votre site au public
 
@@ -51,4 +51,5 @@ Voici une liste de points à vérifier avant d’ouvrir votre site au public :
 
 ## Gérer vos commandes
 
-Le site est ouvert et vous avez reçu vos premières commandes. Pour savoir comment les gérer, vous pouvez consulter [Gérer les commandes](https://www.biblys.fr/pages/doc_orders).
+Le site est ouvert et vous avez reçu vos premières commandes. Pour savoir comment les gérer, vous pouvez consulter
+[Gérer les commandes](https://www.biblys.fr/pages/doc_orders).

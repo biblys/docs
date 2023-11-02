@@ -50,6 +50,10 @@ export default defineConfig({
 						}
 					],
 				},
+				{
+					label: 'Configurer',
+					autogenerate: { directory: 'configurer' }
+				},
 			],
 		}),
 	],
