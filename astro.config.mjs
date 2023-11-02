@@ -31,6 +31,7 @@ export default defineConfig({
 								{ label: 'Ajouter un livre au stock', link: '/administrer/bibliographie/ajouter-un-livre-au-stock' },
 								{ label: 'Grille de prix', link: '/administrer/bibliographie/grille-de-prix' },
 								{ label: 'Fichiers téléchargeables', link: '/administrer/bibliographie/fichiers-telechargeables' },
+								{ label: 'Créer un article de type lot', link: '/administrer/bibliographie/creer-un-article-de-type-lot' },
 							]
 						}
 					],
