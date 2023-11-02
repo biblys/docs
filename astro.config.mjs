@@ -14,8 +14,11 @@ export default defineConfig({
 					lang: 'fr',
 				},
 			},
+			editLink: {
+				baseUrl: 'https://github.com/biblys/docs/edit/main/',
+			},
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/biblys/docs/',
 			},
 			sidebar: [
 				{
