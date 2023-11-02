@@ -49,7 +49,11 @@ export default defineConfig({
 								{ label: 'Réassocier un exemplaire', link: '/administrer/stock/reassocier-un-exemplaire-a-un-autre-article' },
 								{ label: 'Créer des promotions ponctuelles', link: '/administrer/stock/creer-des-promotions-ponctuelles' },
 							]
-						}
+						},
+						{
+							label: 'Contenu éditorial',
+							autogenerate: { directory: 'administrer/contenu' }
+						},
 					],
 				},
 				{
