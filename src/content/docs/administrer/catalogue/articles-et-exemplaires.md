@@ -3,7 +3,7 @@ title: Articles et exemplaires
 description: Tout ce qu'il vous faut pour bien commencer avec Biblys
 ---
 
-Deux notions qu'il est important de bien distinguer : la [fiche article](https://www.biblys.fr/pages/doc_article) et la [fiche exemplaire](https://www.biblys.fr/pages/doc_stock).
+Deux notions qu'il est important de bien distinguer : la [fiche article](/administrer/catalogue/fiche-article/) et la [fiche exemplaire](http://localhost:4321/administrer/stock/fiche-exemplaire/).
 
 La **fiche article** est la fiche d'identité générique d'un livre dans la base. Elle contient des informations telles que titre, auteur, collection, éditeur, couverture, etc. On crée une fiche article pour chaque édition ou réédition d'un livre au sein d'une collection différente. Par exemple, pour [Le Prestige en Lunes d'Encre](https://www.scylla.fr/christopher-priest/le-prestige) et Le [Prestige chez Folio SF](https://www.scylla.fr/christopher-priest/le-prestige_6949), il s'agit du même texte, mais dans deux collections différentes, on a donc deux fiches articles distinctes. Par contre, pour Le Prestige en Lunes d'Encre avec une illustration et Le Prestige en Lunes d'Encre avec l'affiche du film, il s'agit d'une réimpression du livre au sein de la même collection, donc même si l'illustration de couverture, la quatrième, voire l'ISBN sont différents, on n'a qu'une seule fiche. Seule exception : si le livre est réimprimé dans la même collection numérotée mais avec un numéro de collection différent, comme pour par exemple les [Anticipation n° 1013](https://www.scylla.fr/ys/gilles-thomas/la-porte-des-serpents-650) et [Anticipation n° 1887](https://www.scylla.fr/ys/gilles-thomas/la-porte-des-serpents) qui sont pourtant les mêmes textes.
 
