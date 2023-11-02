@@ -20,7 +20,7 @@ Il est possible d'associer plusieurs fichiers téléchargeables à un seul artic
 3.  Dans la selection **Livres téléchargeables** cliquez sur **Ajouter un fichier.**
 4.  Séléctionnez le fichier sur votre disque et cliquez sur **Ouvrir**.
 5.  Une fois le fichier téléchargé, sélectionnez les options adéquates (voir ci-dessous).
-6.  Une fois les options modifiées, cliquer sur ![Enregistrer](/common/icons/save.svg "Enregistrer les modifications") pour enregistrer les modifications, puis **Valider** la fiche.
+6.  Une fois les options modifiées, cliquer sur l'icône "disquette" pour enregistrer les modifications, puis **Valider** la fiche.
 
 ### Options des fichiers téléchargeables
 
@@ -29,14 +29,14 @@ Une fois le nouveau fichier téléchargé sur le serveur, les champs suivant son
 Pour chaque fichier téléchargeable, il est possible de modifier les options suivantes :
 
 *   **Titre** : le nom sous lequel apparaîtra le fichier dans la bibliothèque de l'utilisateur ;
-*   **Accès** : le [droit d'accès](#access) au fichier, public ou restreint ;
+*   **Accès** : le droit d'accès au fichier, public ou restreint ;
 *   **v.** : le numéro de version du fichier à incrémenter en cas de mise à jour ;
 *   **ISBN** : le code ISBN associé à ce fichier en particulier.
 
-Une fois les options modifiées, cliquer sur ![Enregistrer](/common/icons/save.svg "Enregistrer les modifications") pour enregistrer les modifications.
+Une fois les options modifiées, cliquer sur l'icône "disquette" pour enregistrer les modifications.
 
 ### Mettre à jour un fichier téléchargeable
 
-Si vous souhaitez mettre en ligne une nouvelle version du fichier, plutôt que de le supprimer et d'en créer en nouveau, vous pouvez remplacer le fichier déjà en ligne en cliquant sur ![Upload](/common/icons/upload.svg). Le compteur de téléchargement sera conservé et les utilisateurs ayant l'article dans leur bibliothèque verront qu'une nouvelle version du fichier est disponible.
+Si vous souhaitez mettre en ligne une nouvelle version du fichier, plutôt que de le supprimer et d'en créer en nouveau, vous pouvez remplacer le fichier déjà en ligne en cliquant sur l'icône "upload". Le compteur de téléchargement sera conservé et les utilisateurs ayant l'article dans leur bibliothèque verront qu'une nouvelle version du fichier est disponible.
 
 Un fois le nouveau fichier en ligne, incrémentez le **numéro de version** pour déclencher l'apparition d'une notification dans la bibliothèque des utilisateurs ayant déjà téléchargé une ancienne version du fichier.

@@ -60,7 +60,7 @@ Ce champ n'apparaît que si une collection avec une grille de prix a été séle
 
 Le taux de TVA de l'article. 
 
-### [Contributeurs](#Contributeurs)
+### [Contributeurs](#contributeurs)
 
 _Les contributeurs sont l'ensemble des personnes qui sont intervenus dans l'élaboration du livre. C'est à dire non seulement le ou les auteurs, mais aussi le cas échéant l'anthologiste, le traducteur, l'illustrateur (de la couverture et/ou intérieur), le coloriste (pour la BD), les auteurs de paratexte (préface, postface...), etc._
 
