@@ -7,6 +7,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Documentation Biblys',
+			description: 'Documentation de Biblys, la solution e-commerce au service de l\'édition indépendante.',
 			defaultLocale: 'root',
 			locales: {
 				root: {
