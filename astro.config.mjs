@@ -52,6 +52,10 @@ export default defineConfig({
 							]
 						},
 						{
+							label: 'Commandes',
+							autogenerate: { directory: 'administrer/commandes' }
+						},
+						{
 							label: 'Contenu éditorial',
 							autogenerate: { directory: 'administrer/contenu' }
 						},
