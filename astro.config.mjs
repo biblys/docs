@@ -70,6 +70,13 @@ export default defineConfig({
 					autogenerate: { directory: 'configurer' }
 				},
 				{
+					label: 'Personnaliser',
+					items: [{
+						label: 'Modèles',
+						autogenerate: { directory: 'personnaliser/modeles' }
+					}],
+				},
+				{
 					label: 'Tutoriels',
 					autogenerate: { directory: 'tutoriels' }
 				},
