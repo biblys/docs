@@ -40,7 +40,8 @@ export default defineConfig({
 								{ label: 'Fichiers téléchargeables', link: '/administrer/catalogue/fichiers-telechargeables' },
 								{ label: 'Créer un article de type lot', link: '/administrer/catalogue/creer-un-article-de-type-lot' },
 								{ label: 'Supprimer un article', link: '/administrer/catalogue/supprimer-un-article' },
-							]
+							],
+							collapsed: true,
 						},
 						{
 							label: 'Stock',
@@ -49,15 +50,18 @@ export default defineConfig({
 								{ label: 'Fiche exemplaire', link: '/administrer/stock/fiche-exemplaire' },
 								{ label: 'Réassocier un exemplaire', link: '/administrer/stock/reassocier-un-exemplaire-a-un-autre-article' },
 								{ label: 'Créer des promotions ponctuelles', link: '/administrer/stock/creer-des-promotions-ponctuelles' },
-							]
+							],
+							collapsed: true,
 						},
 						{
 							label: 'Commandes',
-							autogenerate: { directory: 'administrer/commandes' }
+							autogenerate: { directory: 'administrer/commandes' },
+							collapsed: true,
 						},
 						{
 							label: 'Contenu éditorial',
-							autogenerate: { directory: 'administrer/contenu' }
+							autogenerate: { directory: 'administrer/contenu' },
+							collapsed: true,
 						},
 					],
 				},
