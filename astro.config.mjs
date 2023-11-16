@@ -65,6 +65,10 @@ export default defineConfig({
 					label: 'Configurer',
 					autogenerate: { directory: 'configurer' }
 				},
+				{
+					label: 'Tutoriels',
+					autogenerate: { directory: 'tutoriels' }
+				},
 			],
 		}),
 	],
