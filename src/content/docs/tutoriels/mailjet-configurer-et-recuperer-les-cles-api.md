@@ -18,6 +18,7 @@ Voici comment configurer Mailjet pour une utilisation avec Biblys, et récupére
 1.  Se rendre dans [**Mon compte**](https://app.mailjet.com/account)
 2.  Cliquer sur [**Paramètres SMTP et Send API**](https://app.mailjet.com/account/setup)
 3.  Récupérer les valeurs des champs **Nom d'utilisateur (clé API)** et **Mot de passe (clé secrète)**
+4. [Transmettre ces informations de manière sécurisée](/tutoriels/transmettre-des-informations-confidentielles-de-maniere-securisee/).
 
 ## Configurer SPF et DKIM
 

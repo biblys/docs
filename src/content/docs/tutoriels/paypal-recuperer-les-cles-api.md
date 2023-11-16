@@ -13,3 +13,4 @@ Le but est d'obtenir deux chaînes de caractères : **Client ID** et **Secret**
 7.  Dans la section **LIVE API CREDENTIALS,** récupérer la chaîne de caractère en face du libellé **Client ID**
 8.  Cliquer sur **Show** sous le libellé **Secret**
 9.  Dans le tableau qui apparaît, récupérer la chaine de caractère qui se trouve dans la colonne **Secret**
+10. [Transmettre ces informations de manière sécurisée](/tutoriels/transmettre-des-informations-confidentielles-de-maniere-securisee/).
