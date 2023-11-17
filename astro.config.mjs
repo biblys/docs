@@ -74,6 +74,10 @@ export default defineConfig({
 					items: [{
 						label: 'Modèles',
 						autogenerate: { directory: 'personnaliser/modeles' }
+					},
+					{
+						label: 'Entités',
+						autogenerate: { directory: 'personnaliser/entites' }
 					}],
 				},
 				{
