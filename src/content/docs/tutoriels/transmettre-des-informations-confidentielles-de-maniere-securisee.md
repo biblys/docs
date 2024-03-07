@@ -10,7 +10,7 @@ Entrez le texte à transmettre dans le champ texte puis cliquer sur Envoyer.
 
 ![Formulaire PrivateBin](../../../assets/privatebin-formulaire.png)
 
-Le site fournit alors un lien de partage sécurisé que vous pouvez transmettre par e-mail.
+Le site fournit alors un lien de partage sécurisé à transmettre. Vous pouvez pour cela cliquer sur le bouton **Email** pour ouvrir un message pré-rempli dans votre logiciel de messagerie ou bien copier le lien avec <kbd>Ctrl</kbd> + <kbd>C</kbd> (ou <kbd>Cmd</kbd> + <kbd>C</kbd> sur Mac).
 
 ![Formulaire PrivateBin](../../../assets/privatebin-lien.png)
 
