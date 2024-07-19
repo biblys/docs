@@ -6,7 +6,7 @@ Le but est d'obtenir deux chaînes de caractères : **Client ID** et **Secret Ke
 
 1. Se rendre sur le site [PayPal Developer](https://developer.paypal.com/)
 1. Cliquer, en haut à droite, sur **Login**, se connecter avec ses identifiants PayPal
-1. En haut à droite, basculer l'interrupteur **Sandbox / Live** sur **Sandbox**
+1. En haut à droite, basculer l'interrupteur **Sandbox / Live** sur **Live**
 1. Cliquer sur **API Credentials** dans le menu de navigation
 1. S'il existe déjà une application *Biblys* dans la section *REST API apps*, cliquer sur **Biblys** et passez à l'étape 8
 1. Sinon, cliquer, en haut à droite, sur **Create App**
