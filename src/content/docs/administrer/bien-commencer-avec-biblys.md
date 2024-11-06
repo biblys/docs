@@ -3,7 +3,7 @@ title: Bien commencer avec Biblys
 description: Tout ce qu'il vous faut pour bien commencer avec Biblys
 ---
 
-Votre site Biblys est installé et vous avez accès à l’administration (en cliquant sur le logo Biblys en haut à gauche). 
+Votre site Biblys est installé et vous avez accès à l’administration. 
 Par où commencer ?
 
 :::tip[Vous n'avez pas encore de site Biblys ?]
