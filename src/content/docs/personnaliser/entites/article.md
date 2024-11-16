@@ -57,17 +57,6 @@ Permet de tester la présence de la propriété `property` pour cet article.
 {% endif %}
 ```
 
-### article.hasCover()
-
-Permet de tester la présence d'une image de couverture pour cet article.
-Retourne un booléan (`true` ou `false`).
-
-```twig
-{% if article.hasCover() %}
-  {{ article.getCoverTag()|raw }}
-{% endif %}
-```
-
 ### article.hasDownloadableFiles(type)
 
 Permet de tester la présence de fichier téléchargeables associés à l'article. Par défaut, renvoie `true` ou `false` si
@@ -85,29 +74,6 @@ prendre la valeur `free` pour les fichiers publics ou `paid` pour les fichiers r
           {% endfor %}
         </p>
     {% endif %}
-```
-
-### article.getCoverTag(options)
-
-Retourne la couverture de l'article sous la forme d'une balise HTML (image et lien vers l'image haute définition).
-L'argument options est un tableau qui peut prendre les propriétés suivantes :
-
-* `class` : la valeur de l'attribut `class` de la balise image (par défaut : aucun)
-* `rel` : la valeur de l'attribut `rel` du lien (par défaut : aucun)
-* `link` : l'url vers laquelle doit pointer le lien (par défaut : l'image en haute définition)
-* `size` la taille de l'image sous la forme `wXXX` pour fixer la largeur ou `hXXX` pour la hauteur (par défaut : pleine
-  résolution).
-
-```twig
-article.getCoverTag({ class: 'cover', rel: 'lightbox', size: 'w300' });
-```
-
-Générera le code HTML suivant :
-
-```html
-<a href="https://media.biblys.fr/book/05/13005.jpg" rel="lightbox">
-  <img src="https://media.biblys.fr/book/05/13005-w300.jpg" class="cover" alt="Titre du livre">
-</a>
 ```
 
 ### `article.getAvailableItems()`
@@ -161,6 +127,24 @@ Ces fonctions retournent `true` ou `false` selon la disponibilité d'un article.
 * `isSoldOut()` : `true` si **06 - Arrêt définitif de commercialisation**
 * `isSoonUnavailable()` : `true` si **09 - Bientôt épuisé**
 * `isPrivatelyPrinted()` : `true` si **10 - Hors commerce**
+
+## Afficher l'image de couverture d'un article
+
+* `hasImage` renvoie `true` si une image de couverture existe pour cet article, `false` sinon
+* `imageUrl` renvoie l'url de l'image de couverture de l'article
+
+Il est possible d'utiliser le template partiel `AppBundle:Article:_cover.html.twig` pour générer facilement le code HTML
+nécessaire à l'affichage d'une image de couverture :
+
+```twig
+{% if article.model|hasImage %}
+  {% include "AppBundle:Article:_cover.html.twig" with {
+    article: article.model,
+    class: "article__cover-image",
+    rel: "lightbox"
+  } %}
+{% endif %}
+```
 
 ## Article de type "lot"
 

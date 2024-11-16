@@ -32,3 +32,18 @@ La fiche article représente un produit en vente sur votre site (livre papier, n
 
 {% endif %}
 ```
+
+## Afficher l'image de couverture d'un article
+
+Il est possible d'utiliser le template partiel `AppBundle:Article:_cover.html.twig` pour générer facilement le code HTML
+nécessaire à l'affichage d'une image de couverture :
+
+```twig
+{% if article.model|hasImage %}
+  {% include "AppBundle:Article:_cover.html.twig" with {
+    article: article.model,
+    class: "article__cover-image",
+    rel: "lightbox"
+  } %}
+{% endif %}
+```
