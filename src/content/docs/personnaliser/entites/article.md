@@ -152,3 +152,9 @@ Ces fonctions retournent `true` ou `false` selon la disponibilité d'un article.
 * `isSoldOut()` : `true` si **06 - Arrêt définitif de commercialisation**
 * `isSoonUnavailable()` : `true` si **09 - Bientôt épuisé**
 * `isPrivatelyPrinted()` : `true` si **10 - Hors commerce**
+
+### Type d'articles
+
+Ces méthodes retournent `true` ou `false` selon le type d'article
+
+* `isBundle` : `true` pour un article de type **Lot**
