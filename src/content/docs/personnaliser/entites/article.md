@@ -2,7 +2,8 @@
 title: Article
 ---
 
-L'entité **Article** représente un produit abstrait disponible sur votre site, le plus souvent un livre (à la différence de l'entité [[Item]] qui représente un objet concret) avec les informations bibliographiques liées.
+L'entité **Article** représente un produit abstrait disponible sur votre site, le plus souvent un livre (à la différence
+de l'entité [[Item]] qui représente un objet concret) avec les informations bibliographiques liées.
 
 | Propriété          | Type         | Description                                                                                                                         |
 |--------------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -36,7 +37,8 @@ L'entité **Article** représente un produit abstrait disponible sur votre site,
 
 ### Prix d'un article
 
-Par défaut, le prix d'un article est enregistré en base et affiché sous la forme d'un entier en centimes. Pour afficher un prix correctement formaté à deux décimales, incluant la devise, on peut utiliser le code suivant :
+Par défaut, le prix d'un article est enregistré en base et affiché sous la forme d'un entier en centimes. Pour afficher
+un prix correctement formaté à deux décimales, incluant la devise, on peut utiliser le code suivant :
 
 ```twig
 article.price|price('EUR')|raw
@@ -68,7 +70,9 @@ Retourne un booléan (`true` ou `false`).
 
 ### article.hasDownloadableFiles(type)
 
-Permet de tester la présence de fichier téléchargeables associés à l'article. Par défaut, renvoie `true` ou `false` si n'importe quel type de fichier est présent, mais il est possible de filtrer le test avec le paramètre `type` qui peut prendre la valeur `free` pour les fichiers publics ou `paid` pour les fichiers restreints.
+Permet de tester la présence de fichier téléchargeables associés à l'article. Par défaut, renvoie `true` ou `false` si
+n'importe quel type de fichier est présent, mais il est possible de filtrer le test avec le paramètre `type` qui peut
+prendre la valeur `free` pour les fichiers publics ou `paid` pour les fichiers restreints.
 
 ```twig
     {% if article.hasDownloadableFiles('free') %}
@@ -85,12 +89,14 @@ Permet de tester la présence de fichier téléchargeables associés à l'articl
 
 ### article.getCoverTag(options)
 
-Retourne la couverture de l'article sous la forme d'une balise HTML (image et lien vers l'image haute définition). L'argument options est un tableau qui peut prendre les propriétés suivantes :
+Retourne la couverture de l'article sous la forme d'une balise HTML (image et lien vers l'image haute définition).
+L'argument options est un tableau qui peut prendre les propriétés suivantes :
 
 * `class` : la valeur de l'attribut `class` de la balise image (par défaut : aucun)
 * `rel` : la valeur de l'attribut `rel` du lien (par défaut : aucun)
 * `link` : l'url vers laquelle doit pointer le lien (par défaut : l'image en haute définition)
-* `size` la taille de l'image sous la forme `wXXX` pour fixer la largeur ou `hXXX` pour la hauteur (par défaut : pleine résolution).
+* `size` la taille de l'image sous la forme `wXXX` pour fixer la largeur ou `hXXX` pour la hauteur (par défaut : pleine
+  résolution).
 
 ```twig
 article.getCoverTag({ class: 'cover', rel: 'lightbox', size: 'w300' });
@@ -100,7 +106,7 @@ Générera le code HTML suivant :
 
 ```html
 <a href="https://media.biblys.fr/book/05/13005.jpg" rel="lightbox">
-    <img src="https://media.biblys.fr/book/05/13005-w300.jpg" class="cover" alt="Titre du livre">
+  <img src="https://media.biblys.fr/book/05/13005-w300.jpg" class="cover" alt="Titre du livre">
 </a>
 ```
 
@@ -127,7 +133,8 @@ Retourne une unique entité [[Item]] représentant l'exemplaire en stock le moin
 
 ### article.getContributors(): Contributor[]
 
-Retourne un tableau d'entités [[Contributor]] correspondants à tous les contributeurs d'un livre (auteur·trice·s, illustrateur·trice·s, traducteur·trice·s, etc.)
+Retourne un tableau d'entités [[Contributor]] correspondants à tous les contributeurs d'un livre (auteur·trice·s,
+illustrateur·trice·s, traducteur·trice·s, etc.)
 
 ```twig
 {% for contributor in article.getContributors() %}
@@ -139,6 +146,7 @@ Retourne un tableau d'entités [[Contributor]] correspondants à tous les contri
 ```
 
 Variantes :
+
 - `getAuthors()`: retourne uniquement des contributeurs dont le rôle est "auteur·rice"
 - `getOtherContributors()`: retourne uniquement des contributeurs dont le rôle n'est pas "auteur·rice"
 
@@ -147,14 +155,49 @@ Variantes :
 Ces fonctions retournent `true` ou `false` selon la disponibilité d'un article.
 
 * `isAvailable()` : `true` si **01 - Disponible** ou **09 - Bientôt épuisé**
-* `isComingSoon()`: `true` si **01** ou **09** et que la date de parution est dans le futur, ou si **02 - Pas encore paru**
+* `isComingSoon()`: `true` si **01** ou **09** et que la date de parution est dans le futur, ou si **02 - Pas encore
+  paru**
 * `isToBeReprinted()` : `true` si **03 - Réimpression en cours**
 * `isSoldOut()` : `true` si **06 - Arrêt définitif de commercialisation**
 * `isSoonUnavailable()` : `true` si **09 - Bientôt épuisé**
 * `isPrivatelyPrinted()` : `true` si **10 - Hors commerce**
 
-### Type d'articles
+## Article de type "lot"
 
-Ces méthodes retournent `true` ou `false` selon le type d'article
+Un article de type lot peut contenir plusieurs autres articles. Dans ce cas, les méthodes suivantes peuvent être
+utiles :
 
-* `isBundle` : `true` pour un article de type **Lot**
+* `isBundle` : renvoie `true` pour un article de type **lot**, `false` sinon
+* `getArticlesFromBundle` : renvoie une collection d'entité `Article` contenus dans le lot
+* `isInABundle` : renvoie `true` si l'article fait partie d'un lot
+* `getBundles` : renvoie les entités `Article` de type **lot** dont l'article fait partie
+
+Exemple d'utilisation :
+
+```twig
+{% if article.isBundle %}
+  <div class="article__articles-from-bundle">
+    <p>Ce lot contient les articles :</p>
+    {% for articleInBundle in article.articlesFromBundle %}
+      <li>
+        <a href="{{ path('article_show', { slug: articleInBundle.url }) }}">
+          {{ articleInBundle.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </div>
+{% endif %}
+
+{% if article.isInABundle %}
+  <div class="article__bundles">
+    <p>Ce article fait partie des lots :</p>
+    {% for bundle in article.bundles %}
+      <li>
+        <a href="{{ path('article_show', { slug: bundle.url }) }}">
+          {{ bundle.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </div>
+{% endif %}
+```

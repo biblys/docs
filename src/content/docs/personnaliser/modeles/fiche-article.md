@@ -6,7 +6,7 @@ La fiche article représente un produit en vente sur votre site (livre papier, n
 
 ## Variables
 
-* `article` : l'entité [[Article]] de la page courante
+* `article` : l'entité [Article](/personnaliser/entites/article/) de la page courante
 
 ## Exemple
 
