@@ -3,6 +3,10 @@ title: "alwaysdata : accorder un accès technique à un hébergement"
 tableOfContents: false
 ---
 
+:::tip[Vous n'avez pas de compte ?]
+Commencez [par créer votre compte alwaysdata](https://www.alwaysdata.com/fr/inscription/?from=215e2fb8) en quelques clics.
+:::
+
 Accorder un accès technique à un hébergement alwaysdata permet de donner les droits de configuration de l'hébergement à un tiers sans pour autant qu'il soit propriétaire ou contact de cet hébergement.
 
 1. Se connecter à l'**[espace client alwaysdata](https://admin.alwaysdata.com/login/)**.
