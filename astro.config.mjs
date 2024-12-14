@@ -63,6 +63,11 @@ export default defineConfig({
 							autogenerate: { directory: 'administrer/contenu' },
 							collapsed: true,
 						},
+						{
+							label: 'Financement participatif',
+							autogenerate: { directory: 'administrer/crowdfunding' },
+							collapsed: true,
+						}
 					],
 				},
 				{
