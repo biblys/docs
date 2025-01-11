@@ -6,38 +6,12 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Build
-        run: npm install && npm run build
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@master
-        with:
-          name: site
-          path: ./dist
-
-  upload:
-    runs-on: ubuntu-latest
-    needs: build
-
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@master
-        with:
-          name: site
-          path: ./dist
-
-      - name: Deploy with SSH
-        uses: easingthemes/ssh-deploy@v2.1.4
-        with:
-          SSH_PRIVATE_KEY: ${{ secrets.BIBLYS_ORG_SSH_PRIVATE_KEY }}
-          REMOTE_HOST: ${{ secrets.BIBLYS_ORG_SSH_HOST }}
-          REMOTE_USER: ${{ secrets.BIBLYS_ORG_SSH_USER }}
-          SOURCE: "dist/"
-          TARGET: "~/docs.biblys.org"
+  build-and-deploy:
+    uses: clemlatz/build-and-deploy/.github/workflows/workflow.yml@main
+    with:
+      build-output-directory: dist
+      remote-target-path: ~/docs.biblys.org
+    secrets:
+      ssh-private-key: ${{ secrets.BIBLYS_ORG_SSH_PRIVATE_KEY }}
+      ssh-remote-host: ${{ secrets.BIBLYS_ORG_SSH_HOST }}
+      ssh-remote-user: ${{ secrets.BIBLYS_ORG_SSH_USER }}
