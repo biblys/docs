@@ -36,6 +36,7 @@ export default defineConfig({
 							items: [
 								{ label: 'Articles et exemplaires', link: '/administrer/catalogue/articles-et-exemplaires' },
 								{ label: 'Fiche article', link: '/administrer/catalogue/fiche-article' },
+								{ label: 'Précommande', link: '/administrer/catalogue/precommande' },
 								{ label: 'Grille de prix', link: '/administrer/catalogue/grille-de-prix' },
 								{ label: 'Fichiers téléchargeables', link: '/administrer/catalogue/fichiers-telechargeables' },
 								{ label: 'Créer un article de type lot', link: '/administrer/catalogue/creer-un-article-de-type-lot' },
