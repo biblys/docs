@@ -34,9 +34,9 @@ Pour les articles téléchargeables comme les livres numériques, la case **Pré
 permettra l'ajout d'un article téléchargeable au panier malgré sa date de parution dans le futur. 
 
 Lors du paiement d'une commande contenant un article téléchargeable en précommande, celui-ci est ajouté immédiatement 
-à la bibliothèque numérique, mais le bouton de téléchargement est remplacé par la date de parution.
+à la bibliothèque numérique, mais le bouton de téléchargement est remplacé par la date de parution jusqu'au jour J.
 
-![Un panier content un article en précommande](../../../../assets/administrer/precommande/numerique.png)
+![La biblilothèque numérique contenant un article à paraître](../../../../assets/administrer/precommande/numerique.png)
 
 :::tip[Téléchargement avant parution]
 Les invitations de téléchargement permettent de donner accès au téléchargement d'un article même avant sa date de 
