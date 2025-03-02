@@ -68,7 +68,8 @@ export default defineConfig({
 							label: 'Financement participatif',
 							autogenerate: { directory: 'administrer/crowdfunding' },
 							collapsed: true,
-						}
+						},
+						{ label: 'CLI (ligne de commande)', link: '/administrer/cli-ligne-de-commande/' },
 					],
 				},
 				{
