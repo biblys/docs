@@ -165,21 +165,12 @@ VALUES ('paronymie', 'Éditions Paronymie', 'paronymie.fr', 'contact@paronymie.f
 
 **13. Créer un compte admin**
 
-Le compte du premier utilisateur doit également être créé manuellement dans la table `users`. La seule information
-nécessaire est l'adresse e-mail. Elle doit être valide afin que vous puissiez recevoir le lien de connexion.
+Le compte du premier utilisateur doit également être créé manuellement à l'aide de la commande suivante.
+La seule information nécessaire est l'adresse e-mail. Elle doit être valide afin que vous puissiez recevoir le lien de 
+connexion.
 
-```sql
-INSERT INTO `users`(`email`, `site_id`, `created_at`)
-VALUES ('admin@paronymie.fr', 1, NOW());
-```
-
-Pour que l'utilisateur ait les droits d'administration, il faut également créer une entrée dans la table `rights` en
-indiquant l'identifiant de l'utilisateur qui vient d'être créé (a priori `1`).
-
-```sql
-INSERT INTO `rights`
-(`user_id`, `site_id`, `is_admin`, `right_current`, `right_created`, `right_updated`)
-VALUES (1, 1, 1, 1, NOW(), NOW());
+```shell
+users:create-admin admin@paronymie.fr
 ```
 
 **14. Configurer le serveur web**
