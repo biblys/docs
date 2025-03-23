@@ -103,6 +103,4 @@ ensuite sous le statut **Relancée**, signalée par l'icône et peut être annul
 
 ## Annulation des commandes
 
-Il est possible de cliquer sur le bouton pour annuler une commande. Toute annulation est immédiate et définitive. Le
-client reçoit alors un courriel l'avertissant de l'annulation de sa commande et les exemplaires associés sont remis en
-vente.
+Voir [Annuler une commande](/administrer/commandes/annuler-une-commande/).
