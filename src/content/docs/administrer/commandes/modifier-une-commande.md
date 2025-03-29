@@ -59,9 +59,8 @@ même page (voir ci-dessous).
 
 ## Mettre à jour le mode d'expédition
 
-Sur la page d'édition de la commande, vous pouvez sélectionner un nouveau mode d'expédition. Seules les tranches 
-tarifaires correspondant dont les critères (poids, montant, nombre d’articles, etc.) correspondant à la commande vous
-seront proposées.
+Sur la page d'édition de la commande, vous pouvez sélectionner un nouveau mode d'expédition. Seules les options d'expéditions 
+dont les critères (poids, montant, nombre d’articles, etc.) correspondent à la commande vous seront proposées.
 
 1. Sur page de la commande, en bas à droite, cliquez sur **Modifier**.
 2. En bas de page, dans la section *Modifier le mode d'expédition*, sélectionner le nouveau mode d'expédition.
