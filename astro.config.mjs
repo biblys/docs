@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import Icons from 'unplugin-icons/vite'
 
 // https://astro.build/config
 export default defineConfig({
@@ -8,6 +9,7 @@ export default defineConfig({
 		starlight({
 			title: 'Documentation Biblys',
 			description: 'Documentation de Biblys, le logiciel libre pour créer des boutiques de livres en ligne.',
+			customCss: ['./src/styles/custom.css'],
 			defaultLocale: 'root',
 			locales: {
 				root: {
@@ -94,4 +96,7 @@ export default defineConfig({
 			],
 		}),
 	],
+	vite: {
+		plugins: [Icons({ compiler: 'astro' })],
+	},
 });
