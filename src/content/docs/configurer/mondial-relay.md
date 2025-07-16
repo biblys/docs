@@ -30,7 +30,7 @@ Pour configurer Mondial Relay sur votre site Biblys, vous devez obtenir deux cha
 Si vous utilisez Biblys dans le cadre de l'abonnement Biblys, ou si quelqu'un gère techniquement votre site Biblys pour
 vous, vous pouvez lui [transmettre les clés API de manière sécurisée](/tutoriels/transmettre-des-informations-confidentielles-de-maniere-securisee/).
 
-Sinon, vous devez ajouter ces clés à la configuration en modifiant le fichier `config.yml` comme ceci:
+Sinon, vous devez ajouter ces clés à la configuration en modifiant le fichier `config.yml` comme ceci :
 
 ```yaml
 mondial_relay:
@@ -52,3 +52,25 @@ client·es puisse choisir ce mode d'expédition, vous devrez créer une tranche 
 4. Vous êtes libre de définir les autres caractéristiques (conditions, tarifs) selon votre politique de frais de port.
 
 
+### Étape 4 (facultative) : récupérer le code du point relais de collecte
+
+Si vous souhaitez utiliser la fonctionnalité d'export d'un fichier CSV de commandes pour Mondial Relay, vous devrez
+également préciser l'identifiant du point relais dans lequel vous souhaitez déposer les colis (dit point de collecte).
+
+Pour cela, vous devez :
+1. Se rendre sur le site [Trouver votre point relais ou Locker](https://www.mondialrelay.fr/trouver-le-point-relais-le-plus-proche-de-chez-moi/)
+2. Entrer votre code postal, votre ville et cliquer sur le bouton **Rechercher**
+3. Trouver le point relais de collecte souhaité dans la liste des points relais
+4. Récuperer le code du point relais de collecte : il s'agit d'un code à 5 chiffres précédé de `FR-`
+
+![Trouver le code du point relais de collecte](../../../assets/configurer/mondial-relay/code-point-relais-collecte.png)
+
+5. Enfin, ajouter ce code, sans le préfixe `FR-` comme valeur d'une nouvelle propriété `id_relais_collecte` enfant de la 
+propriété `mondial_relay` en modifiant le fichier `config.yml` comme ceci :
+
+```yaml
+mondial_relay:
+  code_enseigne: ABCD1234
+  private_key: efgHijKl
+  id_relais_collecte: 12345
+```
