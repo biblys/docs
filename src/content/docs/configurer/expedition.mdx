@@ -1,0 +1,36 @@
+---
+title: Expédition
+---
+import FloppyDiskIcon from '~icons/fa6-solid/floppy-disk';
+
+
+Biblys vous permet de configurer finement les frais de port appliquées aux commandes grâce aux options d'expédition.
+
+Lorsqu'un·e client·e passe une commande, il·elle peut choisir parmi une liste d'options d'expédition. Les options
+proposées dépendent de certains critères comme la zone géographique de destination, le poids total de la commande,
+le nombre d'articles ou son montant.
+
+Sur la page **Expédition** > **Options** de l'administration, vous pouvez créer autant d'options que vous le souhaitez,
+et pour chacune d'elles, de définir les conditions d'application du tarif.
+
+## Ajouter une option d'expédition
+
+![Options d'expédition](../../../assets/configurer/expedition/options.png)
+
+En cliquant sur **Ajouter une option**, vous pourrez pour créer une nouvelle option d'expédition.
+
+![Ajouter une option](../../../assets/configurer/expedition/ajouter-une-option.png)
+
+Les champs à remplir sont les suivants :
+
+* **Intitulé** : le nom de l'option d'expédition, qui sera affiché à l'utilisateur·ice lors de la commande.
+* **Type d'envoi** : le type de transporteur ou de service d'expédition (par exemple, "Colissimo", "Mondial Relay",
+  etc.).
+* **Zone géographique** : la zone géographique à laquelle s'applique cette option. L'option ne sera proposée à l'
+  utilisateur·ice que si son pays correspond à cette zone.
+* **Conditions** : les conditions d'application de l'option, qui peuvent être basées sur le poids total de la commande,
+  le nombre d'articles ou le montant total de la commande.
+* **Montant (en centimes)** : le tarif de cette option, qui sera ajouté au montant total de la commande si
+  l'utilisateur·ice choisit cette option.
+
+Cliquer sur **Ajouter** pour enregistrer la nouvelle option. Celle-ci est effective immédiatement.
