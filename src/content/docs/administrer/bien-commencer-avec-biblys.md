@@ -46,7 +46,7 @@ Voici une liste de points à vérifier avant d’ouvrir votre site au public :
 - Avez-vous configuré un moyen de paiement ?
 - Avez-vous configuré une solution d'envoi d'e-mail (SMTP) ?
 - Avez-vous configuré la TVA ?
-- Avez-vous configuré les frais de port ?
+- Avez-vous configuré les options d'expédition ?
 - Avez-vous configuré l’anti spam ?
 - Avez-vous inscrit le site à Google Search Console ?
 - Avez-vous configuré une solution de statistiques telles que Matomo ?

@@ -41,9 +41,9 @@ mondial_relay:
 ### Étape 3 : créer un tarif Mondial Relay
 
 L'outil de sélection du point de retrait Mondial Relay est désormais configuré sur votre site, mais pour que vos 
-client·es puisse choisir ce mode d'expédition, vous devrez créer une tranche tarifaire Mondiale Relay pour l'expédition.
+client·es puisse choisir ce mode d'expédition, vous devrez créer une option d'expédition de type Mondial Relay.
 
-1. Rendez-vous sur la page **Frais de port** de l'administration de votre site
+1. Rendez-vous sur la page **Expédition** de l'administration de votre site
 2. Cliquez sur le bouton **Ajouter une tranche**
 3. Pour le **Type d'envoi**, choisissez "Mondial Relay"
 
@@ -61,7 +61,7 @@ Pour cela, vous devez :
 1. Se rendre sur le site [Trouver votre point relais ou Locker](https://www.mondialrelay.fr/trouver-le-point-relais-le-plus-proche-de-chez-moi/)
 2. Entrer votre code postal, votre ville et cliquer sur le bouton **Rechercher**
 3. Trouver le point relais de collecte souhaité dans la liste des points relais
-4. Récuperer le code du point relais de collecte : il s'agit d'un code à 5 chiffres précédé de `FR-`
+4. Récupérer le code du point relais de collecte : il s'agit d'un code à 5 chiffres précédé de `FR-`
 
 ![Trouver le code du point relais de collecte](../../../assets/configurer/mondial-relay/code-point-relais-collecte.png)
 
