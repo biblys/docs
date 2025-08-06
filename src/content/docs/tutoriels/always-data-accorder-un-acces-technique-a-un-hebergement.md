@@ -12,7 +12,7 @@ Accorder un accès technique à un hébergement alwaysdata permet de donner les 
 1. Se connecter à l'**[espace client alwaysdata](https://admin.alwaysdata.com/login/)**.
 2. Cliquer en haut à droite sur le menu **Espace client** puis sur **[Permissions](https://admin.alwaysdata.com/permissions/)**.
 3. Cliquer sur le bouton **[Ajouter un utilisateur](https://admin.alwaysdata.com/permissions/add/)**.
-4. Dans la section *Informations obligatoires*, entrer `clement@biblys.fr` dans le champ **email**.
+4. Dans la section *Informations obligatoires*, entrer `clement@biblys.net` dans le champ **email**.
 
 ![Informations obligatoires](../../../assets/tutoriel/alwaysdata/informations-obligatoire.png)
 
