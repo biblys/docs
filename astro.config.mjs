@@ -80,7 +80,12 @@ export default defineConfig({
 				},
 				{
 					label: 'Personnaliser',
-					items: [{
+					items: [
+					{
+						label: 'Créer un thème',
+						link: '/personnaliser/creer-un-theme/'
+					},
+					{
 						label: 'Modèles',
 						autogenerate: { directory: 'personnaliser/modeles' }
 					},
