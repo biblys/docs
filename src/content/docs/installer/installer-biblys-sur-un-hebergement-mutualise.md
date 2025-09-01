@@ -96,11 +96,11 @@ hébergeur :
 
 ```yaml
 db:
-  host: localhost
-  port: 3306
-  user: biblys
-  pass: abcd1234…
-  base: biblys
+  host: localhost # serveur de la base de données
+  port: 3306 # port de connexion à la base de données
+  base: biblys # nom de la base de données
+  user: biblys # utilisateur de la base de données
+  pass: abcd1234… # mot de passe de l'utilisateur de la base de données
 ```
 
 **8. Exécuter les migrations.**
@@ -170,7 +170,13 @@ La seule information nécessaire est l'adresse e-mail. Elle doit être valide af
 connexion.
 
 ```shell
-users:create-admin admin@paronymie.fr
+composer users:create-admin <votre adresse e-mail>
+```
+
+Par exemple :
+
+```shell
+composer users:create-admin admin@paronymie.fr
 ```
 
 **14. Configurer le serveur web**
