@@ -35,7 +35,7 @@ considérés comme vendables dès lors qu'il font parti du catalogue.
 
 Une fois que votre catalogue commence à se remplir, vous pouvez commencer à personnaliser Biblys en créant un habillage graphique à l’aide de **l’éditeur de thème** disponible dans l’administration. 
 
-Pour vous aider, vous pouvez consulter [le wiki de l’éditeur de thème](https://github.com/biblys/wiki/wiki).
+Pour vous aider, vous pouvez consulter [la documentation concernant les thèmes](/personnaliser/creer-un-theme).
 
 ## Avant d’ouvrir votre site au public
 
