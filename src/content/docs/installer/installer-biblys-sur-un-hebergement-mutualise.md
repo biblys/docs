@@ -202,27 +202,23 @@ environment: prod
 
 **12. Configurer le site**
 
-Pour que Biblys fonctionne, il faut créer une entrée dans la table `sites`. Cela doit se faire manuellement aujourd'hui.
-Les colonnes à remplir obligatoirement sont :
+Il est temps de configurer votre site. Entrer la commande suivante :
 
-- `site_name` : un nom court, sans espaces ni caractères spéciaux
-- `site_title` : le nom complet du site
-- `site_domain` : le nom de domaine du site (avec éventuellement le sous-domaine `www` mais sans `https//`)
-- `site_contact` : une adresse e-mail de contact
-
-Voici un exemple de requête SQL à exécuter :
-
-```sql
-INSERT INTO `sites`
-(`site_name`, `site_title`, `site_domain`, `site_contact`, `site_created`, `site_updated`)
-VALUES ('paronymie', 'Éditions Paronymie', 'paronymie.fr', 'contact@paronymie.fr', NOW(), NOW());
+```shell
+composer site:configure
 ```
+
+Trois informations vous seront demandées :
+
+- Le nom du site, qui sera affiché notamment dans le titre de l'onglet du navigateur
+- L'adresse URL du site à laquelle le site sera accessible (sous la forme `https://example.org`)
+- L'adresse e-mail du contact, à laquelle seront envoyés les emails du site, notamment les confirmations de commande.
 
 **13. Créer un compte admin**
 
 Le compte du premier utilisateur doit également être créé manuellement à l'aide de la commande suivante.
 La seule information nécessaire est l'adresse e-mail. Elle doit être valide afin que vous puissiez recevoir le lien de
-connexion.
+connexion. Elle peut (et devrait) être différente de l'adresse e-mail de contact entrée à l'étape précédente.
 
 ```shell
 composer users:create-admin <votre adresse e-mail>
