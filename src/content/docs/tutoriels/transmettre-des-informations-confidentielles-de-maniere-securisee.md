@@ -16,7 +16,7 @@ qu'il n'a pas été intercepté et lu par un tiers.
 
 ## Comment utiliser PrivateBin
 
-1. Se rendre sur le site https://privatebin.biblys.fr.
+1. Se rendre sur le site https://privatebin.biblys.net.
 2. Entrez le texte à transmettre dans le champ texte puis cliquer sur **Envoyer**.
 
 ![Formulaire PrivateBin](../../../assets/privatebin-formulaire.png)

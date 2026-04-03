@@ -25,4 +25,4 @@ Si vous souhaitez installer un véritable site Biblys et commencer à vendre des
 
 Si vous n'avez pas les compétences, ou ne souhaitez pas gérer les aspects techniques de votre site, vous pouvez opter
 pour une prestation d'installation et/ou un abonnement de maintenance. 
-[Rendez-vous sur biblys.fr pour en savoir plus.](https://biblys.fr/page/tarifs)
+[Rendez-vous sur biblys.org pour en savoir plus.](https://biblys.org/tarifs/)

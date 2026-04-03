@@ -55,4 +55,4 @@ Voici une liste de points à vérifier avant d’ouvrir votre site au public :
 ## Gérer vos commandes
 
 Le site est ouvert et vous avez reçu vos premières commandes. Pour savoir comment les gérer, vous pouvez consulter
-[Gérer les commandes](https://www.biblys.fr/pages/doc_orders).
+[Gérer les commandes](/administrer/commandes/gestion-des-commandes/).
